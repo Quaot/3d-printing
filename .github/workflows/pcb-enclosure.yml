@@ -1,0 +1,30 @@
+name: pcb-enclosure
+
+on:
+  push:
+    paths:
+      - "projects/pcb-enclosure/**"
+      - ".github/workflows/pcb-enclosure.yml"
+  pull_request:
+    paths:
+      - "projects/pcb-enclosure/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/pcb-enclosure
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python check.py
+      - run: python build.py examples/test_board.kicad_pcb --connectors J1
+      - uses: actions/upload-artifact@v7
+        with:
+          name: pcb-enclosure-parts
+          path: projects/pcb-enclosure/out/

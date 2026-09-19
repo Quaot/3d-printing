@@ -1,12 +1,14 @@
 # 3D Printing
 
 [![switch-fidget checks](https://github.com/Quaot/3d-printing/actions/workflows/switch-fidget.yml/badge.svg)](https://github.com/Quaot/3d-printing/actions/workflows/switch-fidget.yml)
+[![pcb-enclosure checks](https://github.com/Quaot/3d-printing/actions/workflows/pcb-enclosure.yml/badge.svg)](https://github.com/Quaot/3d-printing/actions/workflows/pcb-enclosure.yml)
 [![License: MIT](https://img.shields.io/github/license/Quaot/3d-printing)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/Quaot/3d-printing)](https://github.com/Quaot/3d-printing/commits/main)
 [![Repo size](https://img.shields.io/github/repo-size/Quaot/3d-printing)](https://github.com/Quaot/3d-printing)
-![Projects](https://img.shields.io/badge/projects-3-blue)
+![Projects](https://img.shields.io/badge/projects-4-blue)
 ![Fusion 360](https://img.shields.io/badge/Fusion_360-F3D-orange?logo=autodesk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-build123d-3776AB?logo=python&logoColor=white)
+![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
 ![Cura](https://img.shields.io/badge/Slicer-Cura-196ef0?logo=ultimaker&logoColor=white)
 ![Printer](https://img.shields.io/badge/Printer-Anycubic_Mega_Pro-222)
 ![Material](https://img.shields.io/badge/Material-PLA-green)
@@ -18,6 +20,7 @@ My 3D printing projects: design files, printable STLs, and notes on each one.
 | [IB Physics sensor mount](projects/ib-physics-sensor-mount/) | Fusion 360, FDM | Printed (Sep–Oct 2025) |
 | [Toothpaste squeezer](projects/toothpaste-squeezer/) | FDM | Printed (Dec 2025) |
 | [Switch fidget](projects/switch-fidget/) | Python (build123d), FDM | In progress, not printed yet |
+| [PCB enclosure generator](projects/pcb-enclosure/) | KiCad, Python (build123d), FDM | In progress, not printed yet |
 
 ## Printer and settings
 
